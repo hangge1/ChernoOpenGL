@@ -67,6 +67,16 @@ OpenGL不是开源的，是跨平台的。
 
 
 
+### P4_VBO_VertexAttribute
+
+介绍现代OpenGL的一些概念：顶点缓冲区（VBO）、VertexAttribute、DrawCall、状态机等概念
+
+利用glDrawArrays绘制一个最简单的三角形！
+
+
+
+
+
 
 
 
