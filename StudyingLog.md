@@ -35,3 +35,51 @@ OpenGL不是开源的，是跨平台的。
 结果如下：
 
 ![image-20240616152520386](./StudyingLog.assets/image-20240616152520386.png)
+
+
+
+
+
+---
+
+
+
+### P3_GLEW_UseModernGL
+
+如何访问显卡提供给咱们的API接口呢？当然，在Window平台，可以用Win32接口获取，但是数量太多了，而且版本不同。所以需要一些库进行获取相应的函数指针，这些库叫做glew、glue、glad等
+
+
+
+引入glew的几个注意点：
+
+（1）头文件包含的顺序，必须要glfw之前
+
+```c++
+#include <GL/glew.h>
+#include <GLFW/glfw3.h>
+```
+
+（2）glew如果采用静态库链接，必须添加宏GLEW_STATIC
+
+（3）glewInit接口若要调用成功，一定要已经存在Windows上下文！
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
