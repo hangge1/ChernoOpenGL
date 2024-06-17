@@ -134,3 +134,13 @@ Shader其实就是跑在GPU上的一段程序，同样需要编译、链接。�
 
 
 
+### P11_Uniform
+
+什么是uniform变量，其实就是cpu向gpu传的变量数据，在Shader中接收
+
+
+
+
+
+
+
