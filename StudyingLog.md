@@ -95,6 +95,14 @@ Shader其实就是跑在GPU上的一段程序，同样需要编译、链接。�
 
 
 
+### P8_ShaderOpt
+
+1、Shader代码放到文件中，进行读取获取
+
+2、添加res/shaders资源文件夹
+
+咱们将vertexshader和fragmentshader放到同一个文本中，通过行标识进行切换
+
 
 
 
