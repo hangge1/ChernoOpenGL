@@ -150,3 +150,11 @@ VAO解决了什么问题，有什么好处
 
 
 
+### P13_AbstractOpenGL
+
+简易使用OOP封装OpenGL中的许多概念：VertexBuffer、VertexArray、IndexBuffer、VertexBufferLayout等
+
+
+
+
+
