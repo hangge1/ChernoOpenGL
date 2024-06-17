@@ -107,5 +107,10 @@ Shader其实就是跑在GPU上的一段程序，同样需要编译、链接。�
 
 
 
+### P9_IndexBuffer
 
+1、介绍什么叫做索引缓冲区EBO、IBO
 
+2、它解决了什么问题？答：顶点重复存储
+
+![image-20240617123801939](StudyingLog.assets/image-20240617123801939.png)
