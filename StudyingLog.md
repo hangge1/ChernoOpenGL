@@ -159,3 +159,10 @@ VAO解决了什么问题，有什么好处
 ### P14_AbstractShader
 
 抽象Shader相关
+
+
+
+### P16_Renderer
+
+抽象渲染类，将剩余的代码进行封装起来
+
