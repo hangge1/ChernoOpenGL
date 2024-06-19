@@ -232,6 +232,33 @@ so default: color == 1 * srcColor + 0 * destColor
 
 
 
-### P24_ProvideTextureTest
+### P24_TestFramework
 
 移植之前的纹理的测试用例
+
+
+
+### P27_BatchRendering
+
+如何批量渲染大量形状的简易二维几何物体
+
+批渲染：所有几何图形集中到一个独立的顶点缓冲区和索引缓冲区，就好像一个几何体，然后调用一次DrawCall
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
