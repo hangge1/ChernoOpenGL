@@ -220,5 +220,7 @@ so default: color == 1 * srcColor + 0 * destColor
 
 
 
+### P23_Batch_Render
 
+如何批量渲染多个物体，承接上节，针对同一的VAO和VBO，修改uniform，调用两次DrawCall实现两次渲染
 
