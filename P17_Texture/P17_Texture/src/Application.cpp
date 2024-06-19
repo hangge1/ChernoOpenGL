@@ -83,7 +83,7 @@ int main(void)
         vb.UnBind();
         shader.UnBind();
 
-        Texture texture("res/textures/logo.jpg");
+        Texture texture("res/textures/logo2.png");
         texture.Bind();
 
         Renderer renderer;
