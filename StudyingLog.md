@@ -200,9 +200,21 @@ so default: color == 1 * srcColor + 0 * destColor
 
 
 
+### P19_Math
+
+数学的作用
+
+向量主要分两类：方向向量和位置向量
+
+引入OpenGL配套的glm数学库
 
 
 
+投影矩阵的作用：
+
+
+
+### P22_Inter_ImGui
 
 
 
