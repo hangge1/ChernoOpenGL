@@ -224,3 +224,14 @@ so default: color == 1 * srcColor + 0 * destColor
 
 如何批量渲染多个物体，承接上节，针对同一的VAO和VBO，修改uniform，调用两次DrawCall实现两次渲染
 
+
+
+### P24_TestFramework
+
+封装一个沙盒测试框架，用于各个测试用例的快速切换和测试的添加
+
+
+
+### P24_ProvideTextureTest
+
+移植之前的纹理的测试用例

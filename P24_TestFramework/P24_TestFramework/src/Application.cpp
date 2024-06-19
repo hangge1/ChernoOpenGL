@@ -19,6 +19,7 @@
 #include "imgui/imgui_impl_opengl3.h"
 
 #include "tests/TestClearColor.h"
+#include "tests/TestTexture2D.h"
 #include "tests/Test.h"
 
 int main(void)
@@ -54,7 +55,7 @@ int main(void)
         return -3;
     }
 
-    GLCall(glViewport(0, 0, width, height));
+    //GLCall(glViewport(0, 0, width, height));
 
     //开启混合后，相当于可以利用纹理alpha通道，带来半透明的效果！
     GLCall(glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA));
@@ -75,6 +76,7 @@ int main(void)
     currentTest = testMenu;
 
     testMenu->RegisterTest<test::TestClearColor>("Clear Color");
+    testMenu->RegisterTest<test::TestTexture2D>("Texture 2D");
 
     /* Loop until the user closes the window */
     while (!glfwWindowShouldClose(window))
