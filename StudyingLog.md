@@ -178,3 +178,31 @@ TODO：混合的引入，好像没有解决背景透明的显示
 
 
 
+### P18_Blend
+
+如果要渲染有色玻璃、半透明物体。怎么做呢，开启混合
+
+默认OpenGL不开启混合
+
+如何控制呢？
+
+```
+glEnable(GL_BLEND)-glDisanble(GL_BLEND)
+glBlendFunc(src, dest)
+===> src default is GL_ONE
+===> dest default is GL_ZERO
+
+glBlendEquation(mode)
+===> default is GL_ADD -> src + dest
+
+so default: color == 1 * srcColor + 0 * destColor
+```
+
+
+
+
+
+
+
+
+
