@@ -256,9 +256,18 @@ so default: color == 1 * srcColor + 0 * destColor
 
 （2）如何绘制任意数量的不同纹理的四边形
 
+```
+思考：如果纹理单元不够用，怎么处理？
+答：分组批渲染
 
+//注意这里的坑
+m_Texture1 = std::make_unique<Texture>("res/textures/logo.jpg");
+m_Texture2 = std::make_unique<Texture>("res/textures/logo2.png"); //注意这里，必须先构造完毕再同时绑定。构造绑定+构造绑定是行不通的
+m_Texture1->Bind(0);
+m_Texture2->Bind(1);
+```
 
-
+（3）如何绘制任意数量的动态几何体
 
 
 

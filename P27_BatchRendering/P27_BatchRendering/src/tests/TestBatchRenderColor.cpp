@@ -60,7 +60,7 @@ namespace test {
         m_Vao->AddBuffer(*m_Vbo, layout);
 
 
-        m_Shader = std::make_unique<Shader>("res/shaders/BatchRender.shader");
+        m_Shader = std::make_unique<Shader>("res/shaders/BatchRenderColor.shader");
         m_Shader->Bind();
 
         m_Proj = glm::ortho(-4.0f, 4.0f, -2.0f, 2.0f, -1.0f, 1.0f);

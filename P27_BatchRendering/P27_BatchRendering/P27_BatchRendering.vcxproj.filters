@@ -75,6 +75,9 @@
     <ClCompile Include="src\tests\TestBatchRenderColor.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="src\tests\TestBatchRenderTexture.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="res\shaders\Basic.shader" />
@@ -492,7 +495,8 @@
     <None Include="src\vendor\glm\gtx\wrap.inl">
       <Filter>头文件</Filter>
     </None>
-    <None Include="res\shaders\BatchRender.shader" />
+    <None Include="res\shaders\BatchRenderColor.shader" />
+    <None Include="res\shaders\BatchRenderTexture.shader" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Renderer.h">
@@ -1420,6 +1424,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="src\tests\TestBatchRenderColor.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\tests\TestBatchRenderTexture.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
