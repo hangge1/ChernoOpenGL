@@ -2,11 +2,19 @@
 
 #include "Renderer.h"
 
-VertexBuffer::VertexBuffer(const void* data, unsigned int size)
+VertexBuffer::VertexBuffer(const void* data, unsigned int size, bool isDynamicDraw)
 {
     GLCall(glGenBuffers(1, &m_RendererID));
     GLCall(glBindBuffer(GL_ARRAY_BUFFER, m_RendererID));
-    GLCall(glBufferData(GL_ARRAY_BUFFER, size, data, GL_STREAM_DRAW));
+    if (isDynamicDraw)
+    {
+        GLCall(glBufferData(GL_ARRAY_BUFFER, size, data, GL_DYNAMIC_DRAW));
+    }
+    else
+    {
+        GLCall(glBufferData(GL_ARRAY_BUFFER, size, data, GL_STREAM_DRAW));
+    }
+    
 }
 
 VertexBuffer::~VertexBuffer()
@@ -22,4 +30,10 @@ void VertexBuffer::Bind() const
 void VertexBuffer::UnBind() const
 {
     GLCall(glBindBuffer(GL_ARRAY_BUFFER, 0));
+}
+
+void VertexBuffer::DynamicWriteData(ptrdiff_t offset, ptrdiff_t size, const void* data) const
+{
+    Bind();
+    GLCall(glBufferSubData(GL_ARRAY_BUFFER, offset, size, data));
 }

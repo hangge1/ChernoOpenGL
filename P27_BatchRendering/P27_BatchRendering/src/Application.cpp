@@ -22,6 +22,7 @@
 #include "tests/TestTexture2D.h"
 #include "tests/TestBatchRenderColor.h"
 #include "tests/TestBatchRenderTexture.h"
+#include "tests/TestBatchRenderDynamic.h"
 #include "tests/Test.h"
 
 int main(void)
@@ -81,6 +82,7 @@ int main(void)
     testMenu->RegisterTest<test::TestTexture2D>("Texture 2D");
     testMenu->RegisterTest<test::TestBatchRenderColor>("BatchRender Color");
     testMenu->RegisterTest<test::TestBatchRenderTexture>("BatchRender Texture");
+    testMenu->RegisterTest<test::TestBatchRenderDynamic>("BatchRender Dynamic");
 
     /* Loop until the user closes the window */
     while (!glfwWindowShouldClose(window))

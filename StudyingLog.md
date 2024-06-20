@@ -269,7 +269,19 @@ m_Texture2->Bind(1);
 
 （3）如何绘制任意数量的动态几何体
 
+```
+思路：VBO先开辟一块大的内存区域，先不给数据，后面通过调用接口，每次渲染前给数据
 
+给VBO预开辟的内存写数据：
+两种方法：
+法1：
+        //glMapBuffer();
+        ////write content
+        //glUnmapBuffer();
+
+法2：
+	glBufferSubData(GL_ARRAY_BUFFER, 0, sizeof(qs), qs);
+```
 
 
 
