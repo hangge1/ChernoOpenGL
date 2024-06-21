@@ -6,6 +6,7 @@ class VertexBuffer
 {
 private:
 	unsigned int m_RendererID;
+	bool m_IsDynamicDraw;
 public:
 	VertexBuffer(const void* data, unsigned int size, bool isDynamicDraw = false);
 	~VertexBuffer();

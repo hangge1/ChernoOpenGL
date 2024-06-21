@@ -23,6 +23,7 @@
 #include "tests/TestBatchRenderColor.h"
 #include "tests/TestBatchRenderTexture.h"
 #include "tests/TestBatchRenderDynamic.h"
+#include "tests/TestBatchRenderDynamicIBO.h"
 #include "tests/Test.h"
 
 int main(void)
@@ -83,6 +84,7 @@ int main(void)
     testMenu->RegisterTest<test::TestBatchRenderColor>("BatchRender Color");
     testMenu->RegisterTest<test::TestBatchRenderTexture>("BatchRender Texture");
     testMenu->RegisterTest<test::TestBatchRenderDynamic>("BatchRender Dynamic");
+    testMenu->RegisterTest<test::TestBatchRenderDynamicIBO>("BatchRender Dynamic IBO");
 
     /* Loop until the user closes the window */
     while (!glfwWindowShouldClose(window))

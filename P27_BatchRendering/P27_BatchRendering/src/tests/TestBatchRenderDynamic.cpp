@@ -21,7 +21,7 @@ namespace test {
         float texIndex;
     };
 
-    std::array<Vertex, 4> CreatreQuead(float x, float y, float texIndex)
+    static std::array<Vertex, 4> CreatreQuead(float x, float y, float texIndex)
     {
         float size = 1.0f;
 
